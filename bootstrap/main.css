@@ -1,0 +1,10 @@
+[class^="col-"] {
+    background-color: #ccc;
+}
+
+header, footer {
+    min-height: 200px;
+}
+img {
+    max-width: 100%;
+}
