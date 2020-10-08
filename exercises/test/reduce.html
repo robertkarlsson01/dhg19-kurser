@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+
+const code = [
+    {name: 'john', langs: ['HTML','CSS']}, 
+    {name: 'jack', langs: ['HTML','JavaScript','Python','TypeScript']}, 
+    {name: 'diane', langs: ['JavaScript','PHP']}
+];
+
+const languages = code.reduce((total, amount) => {
+  amount.langs.forEach( lang => {
+      total.push(lang);
+  })
+  return total;
+}, [])
+
+//console.log(languages) 
+
+console.log('ALLA språk: ' + languages.length)
+languages.forEach(element => console.log(element));
+
+const uniqueLangs = code.reduce((total, amount) => {
+  amount.langs.forEach( lang => {
+    if (total.indexOf(lang) === -1){
+     total.push(lang);
+    }
+  });
+  return total;
+}, []);
+
+//console.log(uniqueLangs)
+console.log('UNIKA språk: ' + uniqueLangs.length)
+uniqueLangs.forEach(element => console.log(element));
+</script>
+
+</body>
+</html>
