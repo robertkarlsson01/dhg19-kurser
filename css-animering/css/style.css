@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700&display=swap');
+
+:root {
+  --dblue: #070742;
+  --green: #BACC00;
+  --lblue: #169E99;
+  --byelllow: #FAE893;
+  --red:#AB0768;
+}
+
+body {
+  font-size: 100%;
+  background-color: #efefef;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 5rem;
+  padding-top: 5rem;
+   text-align: center;
+}
+h2 {
+  font-size: 4rem;
+  color: #fff;
+
+}
+h3 {
+  font-size: 3rem;
+  color: #fff;
+
+}
+
+.centerize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*** HEADER
+*********************/
+header svg#line {
+  fill: var(--lblue);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+header svg#arrow {
+  width: 48px;
+  fill: var(--byelllow);
+  position: absolute;;
+  bottom: 20%;
+  left: 50%;
+}
+/*** SECTIONS
+**************************/
+
+header {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--dblue);
+    color: var(--lblue);
+}
+section {
+  min-height: 100vh;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section div {
+  min-height: 300px;
+  position: relative;
+}
+article {
+  display:block;
+  text-align: center;
+}
+.s1 {
+  background-color: var(--lblue);
+}
+
+.s2, .s3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.s2 {
+    height: 400px;
+    background-color: var(--red);
+    text-align: center;
+
+}
+.s2 img {
+  transform: rotate(-5deg);
+}
+.s2 svg {
+    fill: var(--lblue);
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    transform: rotateX(180deg);
+}
+.s3 {
+  background-color: var(--dblue);
+}
