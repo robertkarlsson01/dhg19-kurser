@@ -35,6 +35,12 @@
         "name": "Github", 
         "url": "https://github.com", 
         "img": "/img/prakticum-logo.png" 
+    },
+    { 
+        "id":7,
+        "name": "Google", 
+        "url": "https://google.com", 
+        "img": "/img/google-logo.png" 
     }
   ]
 }
